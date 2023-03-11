@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
+    "clean-install": "yarn install --frozen-lockfile",
     "test": "echo test",
     "semantic-release": "semantic-release"
   },
