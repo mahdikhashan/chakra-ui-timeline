@@ -1,0 +1,27 @@
+{
+  "name": "chakra-timeline",
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Mahdi Khashan <58775404+mahdikhashan@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "devDependencies": {
+    "@chakra-ui/react": "^2.5.1",
+    "@chakra-ui/styled-system": "^2.6.1",
+    "@chakra-ui/theme-tools": "^2.0.16",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.28",
+    "react": "^18.2.0",
+    "rollup": "^3.19.1",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.9.5"
+  }
+}
