@@ -47,8 +47,8 @@ export const Element = forwardRef<ElementProps, "li">(
           className="el-container__label"
           __css={{ ...labelContainerStyle }}
         >
-          <TimelineElementIcon icon={icon} />
-          <TimelineElementLabel label={label} />
+          <TimelineElementIcon className="el-container__icon" icon={icon} />
+          <TimelineElementLabel className="el-container__label" label={label} />
         </chakra.div>
         <chakra.div
           className="el-container__content"
