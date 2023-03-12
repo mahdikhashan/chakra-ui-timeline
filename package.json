@@ -9,7 +9,8 @@
     "test": "echo test",
     "lint": "eslint -c ./.eslintrc.cjs --ext .ts,.tsx lib/",
     "clean-install": "yarn install --frozen-lockfile",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -25,6 +26,7 @@
     "@typescript-eslint/parser": "^5.54.1",
     "eslint": "^8.36.0",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
     "react": "^18.2.0",
     "rollup": "^3.19.1",
     "rollup-plugin-dts": "^5.2.0",
