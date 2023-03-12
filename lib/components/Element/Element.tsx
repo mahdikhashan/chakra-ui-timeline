@@ -2,8 +2,8 @@ import * as React from "react";
 import { chakra, forwardRef } from "@chakra-ui/react";
 import { useTimelineStyles } from "../Timeline/Timeline";
 import { ElementIcon as TimelineElementIcon } from "./ElementIcon";
-import { ElementContent as TimelineElementContent } from "./ElementContent";
 import { ElementLabel as TimelineElementLabel } from "./ElementLabel";
+import { ElementContent as TimelineElementContent } from "./ElementContent";
 
 export interface ElementProps {
   icon?: React.ComponentType<any> | undefined;
