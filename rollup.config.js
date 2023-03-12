@@ -7,7 +7,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 export default [
   {
-    input: "index.ts",
+    input: "./lib/index.ts",
     output: [
       {
         file: "dist/cjs/index.js",
