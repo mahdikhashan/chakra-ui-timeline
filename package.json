@@ -6,8 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "clean-install": "yarn install --frozen-lockfile",
     "test": "echo test",
+    "lint": "eslint -c ./.eslintrc.cjs --ext .ts,.tsx lib/",
+    "clean-install": "yarn install --frozen-lockfile",
     "semantic-release": "semantic-release"
   },
   "main": "dist/cjs/index.js",
@@ -20,6 +21,10 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/react": "^18.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
     "react": "^18.2.0",
     "rollup": "^3.19.1",
     "rollup-plugin-dts": "^5.2.0",
