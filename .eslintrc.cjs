@@ -13,9 +13,22 @@ module.exports = {
     },
     "plugins": [
         "react",
+        "import",
         "@typescript-eslint"
     ],
     "rules": {
-        "eol-last": "error"
+        "eol-last": "error",
+        "import/no-unresolved": "error"
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true,
+                "project": "./tsconfig.json",
+            }
+        }
     }
 }
