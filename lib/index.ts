@@ -1,2 +1,2 @@
-export * as Timeline from './components/Timeline';
-export * as TimelineElement from './components/Element';
+export * from './components/Timeline';
+export * from './components/Element';
