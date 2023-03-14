@@ -4,18 +4,22 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import packageJSON from './package.json' assert { type: 'json' };
 
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 export default [
   {
     input: "./lib/index.ts",
     output: [
       {
-        file: "dist/cjs/index.js",
+        file: packageJSON.main,
         format: "cjs",
         sourcemap: true,
       },
       {
-        file: "dist/esm/index.js",
+        file: packageJSON.module,
         format: "esm",
         sourcemap: true,
       },
@@ -27,10 +31,10 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
     ],
-    external: ["react", "react-dom", "@chakra-ui/react"]
+    external: Object.keys(packageJSON.peerDependencies)
   },
   {
-    input: "dist/esm/types/index.d.ts",
+    input: "dist/esm/types/lib/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
   },

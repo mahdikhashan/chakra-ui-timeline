@@ -18,7 +18,7 @@ module.exports = {
     ],
     "rules": {
         "eol-last": "error",
-        "import/no-unresolved": "error"
+        "import/no-unresolved": "warn"
     },
     "settings": {
         "import/parsers": {
