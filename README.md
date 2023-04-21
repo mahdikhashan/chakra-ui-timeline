@@ -3,8 +3,10 @@
     <img src="./assets/chakra-ui-timeline.png" width="250px" alt="Chakra UI Timeline Logo" /></a>
   </hr>
 </div>
-# chakra-ui-timeline
+
+# Chakra UI Timeline 
 Component for Chakra UI to show timelines of events
+
 
 ![npm (tag)](https://img.shields.io/npm/v/@mahdikhashan/chakra-timeline/latest?style=plastic)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mahdikhashan/chakra-timeline)
