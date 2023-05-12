@@ -23,7 +23,7 @@ Component for Chakra UI to show timelines of events
 ## Installation
 
 ```
-npm install --save @mahdikhashan/chakra-ui-timeline
+npm install --save @mahdikhashan/chakra-timeline
 ```
 
 ## How to use
