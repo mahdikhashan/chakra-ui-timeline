@@ -1,9 +1,3 @@
-<div align="center">
-  <a href="https://github.com/mahdikhashan/99-minutes-emails">
-    <img src="./assets/chakra-ui-timeline.png" width="250px" alt="Chakra UI Timeline Logo" /></a>
-  </hr>
-</div>
-
 # Chakra UI Timeline 
 Component for Chakra UI to show timelines of events
 
